@@ -1,6 +1,6 @@
 ﻿namespace DBMS_Final_Project
 {
-    partial class Form1
+    partial class GUI
     {
         /// <summary>
         /// 設計工具所需的變數。
