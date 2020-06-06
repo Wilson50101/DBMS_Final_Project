@@ -26,6 +26,15 @@ namespace DBMS_Final_Project
             DataSet ds = new DataSet();
             da.Fill(ds);
             DGV_customer.DataSource = ds.Tables[0];
+
+            if (!cbo_attribute.Items.Contains("custID"))
+                cbo_attribute.Items.Add("custID");
+            if (!cbo_attribute.Items.Contains("custName"))
+                cbo_attribute.Items.Add("custName");
+            if (!cbo_attribute.Items.Contains("custPhone"))
+                cbo_attribute.Items.Add("custPhone");
+            if (!cbo_attribute.Items.Contains("custAddr"))
+                cbo_attribute.Items.Add("custAddr");
         }
 
         private void btn_Insert_Click(object sender, EventArgs e)
@@ -89,6 +98,16 @@ namespace DBMS_Final_Project
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btn_select_Click(object sender, EventArgs e)
+        {
+            SqlConnection db = new SqlConnection();
+            db.ConnectionString = cn;
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM customer WHERE " + cbo_attribute.Text + "=N'" + Txt_condition.Text.Replace("'", "''") + "'", db);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            DGV_customer.DataSource = ds.Tables[0];
         }
     }
 }
