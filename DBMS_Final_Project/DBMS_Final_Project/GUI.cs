@@ -109,5 +109,11 @@ namespace DBMS_Final_Project
             employee emp = new employee();
             emp.Show();
         }
+
+        private void btn_IDUvender_Click(object sender, EventArgs e)
+        {
+            vender ven= new vender();
+            ven.Show();
+        }
     }
 }
