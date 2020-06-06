@@ -97,5 +97,11 @@ namespace DBMS_Final_Project
             DGV_showTables.DataSource = ds.Tables["orders"];
             db.Close();
         }
+
+        private void btn_IDUcustomer_Click(object sender, EventArgs e)
+        {
+            customer cust = new customer();
+            cust.Show();
+        }
     }
 }
