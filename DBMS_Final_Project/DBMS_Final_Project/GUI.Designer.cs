@@ -216,6 +216,7 @@
             this.btn_IDUemployee.TabIndex = 12;
             this.btn_IDUemployee.Text = "employee";
             this.btn_IDUemployee.UseVisualStyleBackColor = true;
+            this.btn_IDUemployee.Click += new System.EventHandler(this.btn_IDUemployee_Click);
             // 
             // btn_IDUproduct
             // 

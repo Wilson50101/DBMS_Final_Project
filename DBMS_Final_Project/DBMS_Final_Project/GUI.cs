@@ -103,5 +103,11 @@ namespace DBMS_Final_Project
             customer cust = new customer();
             cust.Show();
         }
+
+        private void btn_IDUemployee_Click(object sender, EventArgs e)
+        {
+            employee emp = new employee();
+            emp.Show();
+        }
     }
 }
