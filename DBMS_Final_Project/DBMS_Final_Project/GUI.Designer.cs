@@ -42,7 +42,6 @@
             this.btn_purchase = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Lbl_selectTabletoshow = new System.Windows.Forms.Label();
-            this.Lbl_IDU = new System.Windows.Forms.Label();
             this.btn_IDUcustomer = new System.Windows.Forms.Button();
             this.btn_IDUorder = new System.Windows.Forms.Button();
             this.btn_IDUvender = new System.Windows.Forms.Button();
@@ -50,6 +49,7 @@
             this.btn_IDUproduct = new System.Windows.Forms.Button();
             this.btn_IDUpurchase = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.Lbl_BtnMode = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_showTables)).BeginInit();
@@ -171,18 +171,9 @@
             this.Lbl_selectTabletoshow.TabIndex = 8;
             this.Lbl_selectTabletoshow.Text = "選擇欲呈現的資料表";
             // 
-            // Lbl_IDU
-            // 
-            this.Lbl_IDU.AutoSize = true;
-            this.Lbl_IDU.Location = new System.Drawing.Point(13, 17);
-            this.Lbl_IDU.Name = "Lbl_IDU";
-            this.Lbl_IDU.Size = new System.Drawing.Size(147, 12);
-            this.Lbl_IDU.TabIndex = 8;
-            this.Lbl_IDU.Text = "Insert / Delete / Update資料表";
-            // 
             // btn_IDUcustomer
             // 
-            this.btn_IDUcustomer.Location = new System.Drawing.Point(15, 42);
+            this.btn_IDUcustomer.Location = new System.Drawing.Point(17, 54);
             this.btn_IDUcustomer.Name = "btn_IDUcustomer";
             this.btn_IDUcustomer.Size = new System.Drawing.Size(75, 23);
             this.btn_IDUcustomer.TabIndex = 9;
@@ -192,16 +183,17 @@
             // 
             // btn_IDUorder
             // 
-            this.btn_IDUorder.Location = new System.Drawing.Point(15, 71);
+            this.btn_IDUorder.Location = new System.Drawing.Point(17, 83);
             this.btn_IDUorder.Name = "btn_IDUorder";
             this.btn_IDUorder.Size = new System.Drawing.Size(75, 23);
             this.btn_IDUorder.TabIndex = 10;
             this.btn_IDUorder.Text = "order";
             this.btn_IDUorder.UseVisualStyleBackColor = true;
+            this.btn_IDUorder.Click += new System.EventHandler(this.btn_IDUorder_Click);
             // 
             // btn_IDUvender
             // 
-            this.btn_IDUvender.Location = new System.Drawing.Point(15, 100);
+            this.btn_IDUvender.Location = new System.Drawing.Point(17, 112);
             this.btn_IDUvender.Name = "btn_IDUvender";
             this.btn_IDUvender.Size = new System.Drawing.Size(75, 23);
             this.btn_IDUvender.TabIndex = 11;
@@ -211,7 +203,7 @@
             // 
             // btn_IDUemployee
             // 
-            this.btn_IDUemployee.Location = new System.Drawing.Point(106, 42);
+            this.btn_IDUemployee.Location = new System.Drawing.Point(108, 54);
             this.btn_IDUemployee.Name = "btn_IDUemployee";
             this.btn_IDUemployee.Size = new System.Drawing.Size(75, 23);
             this.btn_IDUemployee.TabIndex = 12;
@@ -221,7 +213,7 @@
             // 
             // btn_IDUproduct
             // 
-            this.btn_IDUproduct.Location = new System.Drawing.Point(106, 71);
+            this.btn_IDUproduct.Location = new System.Drawing.Point(108, 83);
             this.btn_IDUproduct.Name = "btn_IDUproduct";
             this.btn_IDUproduct.Size = new System.Drawing.Size(75, 23);
             this.btn_IDUproduct.TabIndex = 13;
@@ -230,7 +222,7 @@
             // 
             // btn_IDUpurchase
             // 
-            this.btn_IDUpurchase.Location = new System.Drawing.Point(106, 100);
+            this.btn_IDUpurchase.Location = new System.Drawing.Point(108, 112);
             this.btn_IDUpurchase.Name = "btn_IDUpurchase";
             this.btn_IDUpurchase.Size = new System.Drawing.Size(75, 23);
             this.btn_IDUpurchase.TabIndex = 14;
@@ -240,8 +232,8 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.Lbl_BtnMode);
             this.panel3.Controls.Add(this.btn_IDUemployee);
-            this.panel3.Controls.Add(this.Lbl_IDU);
             this.panel3.Controls.Add(this.btn_IDUpurchase);
             this.panel3.Controls.Add(this.btn_IDUcustomer);
             this.panel3.Controls.Add(this.btn_IDUvender);
@@ -249,14 +241,24 @@
             this.panel3.Controls.Add(this.btn_IDUorder);
             this.panel3.Location = new System.Drawing.Point(12, 177);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(196, 136);
+            this.panel3.Size = new System.Drawing.Size(201, 147);
             this.panel3.TabIndex = 15;
+            // 
+            // Lbl_BtnMode
+            // 
+            this.Lbl_BtnMode.AutoSize = true;
+            this.Lbl_BtnMode.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_BtnMode.Location = new System.Drawing.Point(28, 14);
+            this.Lbl_BtnMode.Name = "Lbl_BtnMode";
+            this.Lbl_BtnMode.Size = new System.Drawing.Size(142, 28);
+            this.Lbl_BtnMode.TabIndex = 15;
+            this.Lbl_BtnMode.Text = "Button Mode";
             // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(609, 329);
+            this.ClientSize = new System.Drawing.Size(793, 445);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "GUI";
@@ -288,7 +290,6 @@
         private System.Windows.Forms.Button btn_purchase;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label Lbl_selectTabletoshow;
-        private System.Windows.Forms.Label Lbl_IDU;
         private System.Windows.Forms.Button btn_IDUcustomer;
         private System.Windows.Forms.Button btn_IDUorder;
         private System.Windows.Forms.Button btn_IDUvender;
@@ -296,6 +297,7 @@
         private System.Windows.Forms.Button btn_IDUproduct;
         private System.Windows.Forms.Button btn_IDUpurchase;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label Lbl_BtnMode;
     }
 }
 

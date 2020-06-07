@@ -115,5 +115,11 @@ namespace DBMS_Final_Project
             vender ven= new vender();
             ven.Show();
         }
+
+        private void btn_IDUorder_Click(object sender, EventArgs e)
+        {
+            orders order = new orders();
+            order.Show();
+        }
     }
 }
