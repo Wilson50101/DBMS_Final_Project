@@ -219,6 +219,7 @@
             this.btn_IDUproduct.TabIndex = 13;
             this.btn_IDUproduct.Text = "product";
             this.btn_IDUproduct.UseVisualStyleBackColor = true;
+            this.btn_IDUproduct.Click += new System.EventHandler(this.btn_IDUproduct_Click);
             // 
             // btn_IDUpurchase
             // 

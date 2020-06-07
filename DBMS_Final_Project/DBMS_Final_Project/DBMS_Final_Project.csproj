@@ -90,6 +90,12 @@
     <Compile Include="orders.Designer.cs">
       <DependentUpon>orders.cs</DependentUpon>
     </Compile>
+    <Compile Include="product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="product.Designer.cs">
+      <DependentUpon>product.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="vender.cs">
@@ -109,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="orders.resx">
       <DependentUpon>orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="product.resx">
+      <DependentUpon>product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Txt_condition = new System.Windows.Forms.TextBox();
             this.cbo_attribute = new System.Windows.Forms.ComboBox();
+            this.Txt_condition = new System.Windows.Forms.TextBox();
             this.Lbl_select_operation = new System.Windows.Forms.Label();
             this.btn_select = new System.Windows.Forms.Button();
             this.DGV_orders = new System.Windows.Forms.DataGridView();
@@ -59,14 +59,6 @@
             this.panel1.Size = new System.Drawing.Size(440, 52);
             this.panel1.TabIndex = 40;
             // 
-            // Txt_condition
-            // 
-            this.Txt_condition.Location = new System.Drawing.Point(211, 16);
-            this.Txt_condition.Name = "Txt_condition";
-            this.Txt_condition.Size = new System.Drawing.Size(137, 22);
-            this.Txt_condition.TabIndex = 27;
-            this.Txt_condition.Text = "=還是>,<,>=,<=要打在這";
-            // 
             // cbo_attribute
             // 
             this.cbo_attribute.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -75,6 +67,14 @@
             this.cbo_attribute.Name = "cbo_attribute";
             this.cbo_attribute.Size = new System.Drawing.Size(85, 20);
             this.cbo_attribute.TabIndex = 28;
+            // 
+            // Txt_condition
+            // 
+            this.Txt_condition.Location = new System.Drawing.Point(211, 16);
+            this.Txt_condition.Name = "Txt_condition";
+            this.Txt_condition.Size = new System.Drawing.Size(137, 22);
+            this.Txt_condition.TabIndex = 27;
+            this.Txt_condition.Text = "=還是>,<,>=,<=要打在這";
             // 
             // Lbl_select_operation
             // 
@@ -178,15 +178,15 @@
             this.Lbl_orderID.AutoSize = true;
             this.Lbl_orderID.Location = new System.Drawing.Point(12, 26);
             this.Lbl_orderID.Name = "Lbl_orderID";
-            this.Lbl_orderID.Size = new System.Drawing.Size(87, 12);
+            this.Lbl_orderID.Size = new System.Drawing.Size(88, 12);
             this.Lbl_orderID.TabIndex = 28;
-            this.Lbl_orderID.Text = "orderID(e.g. c1) :";
+            this.Lbl_orderID.Text = "orderID(e.g. o1) :";
             // 
             // orders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(467, 366);
+            this.ClientSize = new System.Drawing.Size(481, 366);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.DGV_orders);
             this.Controls.Add(this.btn_update);

@@ -121,5 +121,11 @@ namespace DBMS_Final_Project
             orders order = new orders();
             order.Show();
         }
+
+        private void btn_IDUproduct_Click(object sender, EventArgs e)
+        {
+            product pd = new product();
+            pd.Show();
+        }
     }
 }
