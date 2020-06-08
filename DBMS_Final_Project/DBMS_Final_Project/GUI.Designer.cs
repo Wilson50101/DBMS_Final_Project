@@ -50,12 +50,17 @@
             this.btn_IDUpurchase = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Lbl_BtnMode = new System.Windows.Forms.Label();
+            this.pnl_query_mode = new System.Windows.Forms.Panel();
+            this.Lbl_query_mode = new System.Windows.Forms.Label();
+            this.Txt_query = new System.Windows.Forms.TextBox();
+            this.btn_query = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_showTables)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.pnl_query_mode.SuspendLayout();
             this.SuspendLayout();
             // 
             // database1DataSet
@@ -112,7 +117,7 @@
             this.btn_order.Name = "btn_order";
             this.btn_order.Size = new System.Drawing.Size(75, 23);
             this.btn_order.TabIndex = 3;
-            this.btn_order.Text = "order";
+            this.btn_order.Text = "orders";
             this.btn_order.UseVisualStyleBackColor = true;
             this.btn_order.Click += new System.EventHandler(this.btn_order_Click);
             // 
@@ -165,11 +170,12 @@
             // Lbl_selectTabletoshow
             // 
             this.Lbl_selectTabletoshow.AutoSize = true;
-            this.Lbl_selectTabletoshow.Location = new System.Drawing.Point(31, 12);
+            this.Lbl_selectTabletoshow.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_selectTabletoshow.Location = new System.Drawing.Point(28, 8);
             this.Lbl_selectTabletoshow.Name = "Lbl_selectTabletoshow";
-            this.Lbl_selectTabletoshow.Size = new System.Drawing.Size(113, 12);
+            this.Lbl_selectTabletoshow.Size = new System.Drawing.Size(127, 28);
             this.Lbl_selectTabletoshow.TabIndex = 8;
-            this.Lbl_selectTabletoshow.Text = "選擇欲呈現的資料表";
+            this.Lbl_selectTabletoshow.Text = "Show Table";
             // 
             // btn_IDUcustomer
             // 
@@ -187,7 +193,7 @@
             this.btn_IDUorder.Name = "btn_IDUorder";
             this.btn_IDUorder.Size = new System.Drawing.Size(75, 23);
             this.btn_IDUorder.TabIndex = 10;
-            this.btn_IDUorder.Text = "order";
+            this.btn_IDUorder.Text = "orders";
             this.btn_IDUorder.UseVisualStyleBackColor = true;
             this.btn_IDUorder.Click += new System.EventHandler(this.btn_IDUorder_Click);
             // 
@@ -256,11 +262,52 @@
             this.Lbl_BtnMode.TabIndex = 15;
             this.Lbl_BtnMode.Text = "Button Mode";
             // 
+            // pnl_query_mode
+            // 
+            this.pnl_query_mode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_query_mode.Controls.Add(this.btn_query);
+            this.pnl_query_mode.Controls.Add(this.Txt_query);
+            this.pnl_query_mode.Controls.Add(this.Lbl_query_mode);
+            this.pnl_query_mode.Location = new System.Drawing.Point(219, 177);
+            this.pnl_query_mode.Name = "pnl_query_mode";
+            this.pnl_query_mode.Size = new System.Drawing.Size(362, 147);
+            this.pnl_query_mode.TabIndex = 16;
+            // 
+            // Lbl_query_mode
+            // 
+            this.Lbl_query_mode.AutoSize = true;
+            this.Lbl_query_mode.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_query_mode.Location = new System.Drawing.Point(14, 14);
+            this.Lbl_query_mode.Name = "Lbl_query_mode";
+            this.Lbl_query_mode.Size = new System.Drawing.Size(135, 28);
+            this.Lbl_query_mode.TabIndex = 15;
+            this.Lbl_query_mode.Text = "Query Mode";
+            // 
+            // Txt_query
+            // 
+            this.Txt_query.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.Txt_query.Location = new System.Drawing.Point(19, 54);
+            this.Txt_query.Name = "Txt_query";
+            this.Txt_query.Size = new System.Drawing.Size(328, 22);
+            this.Txt_query.TabIndex = 28;
+            this.Txt_query.Text = "請於此輸入SQL指令,結果會顯示於上方DataGridView";
+            // 
+            // btn_query
+            // 
+            this.btn_query.Location = new System.Drawing.Point(19, 83);
+            this.btn_query.Name = "btn_query";
+            this.btn_query.Size = new System.Drawing.Size(75, 23);
+            this.btn_query.TabIndex = 16;
+            this.btn_query.Text = "query";
+            this.btn_query.UseVisualStyleBackColor = true;
+            this.btn_query.Click += new System.EventHandler(this.btn_query_Click);
+            // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(793, 445);
+            this.ClientSize = new System.Drawing.Size(611, 342);
+            this.Controls.Add(this.pnl_query_mode);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "GUI";
@@ -274,6 +321,8 @@
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.pnl_query_mode.ResumeLayout(false);
+            this.pnl_query_mode.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -300,6 +349,10 @@
         private System.Windows.Forms.Button btn_IDUpurchase;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label Lbl_BtnMode;
+        private System.Windows.Forms.Panel pnl_query_mode;
+        private System.Windows.Forms.Label Lbl_query_mode;
+        private System.Windows.Forms.Button btn_query;
+        private System.Windows.Forms.TextBox Txt_query;
     }
 }
 

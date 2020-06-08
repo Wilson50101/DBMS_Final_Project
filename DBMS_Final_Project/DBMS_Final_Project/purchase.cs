@@ -116,7 +116,5 @@ namespace DBMS_Final_Project
             da.Fill(ds);
             DGV_orders.DataSource = ds.Tables[0];
         }
-
-        
     }
 }
