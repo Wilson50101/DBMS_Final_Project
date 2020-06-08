@@ -170,27 +170,27 @@
             this.Lbl_venderPhone.AutoSize = true;
             this.Lbl_venderPhone.Location = new System.Drawing.Point(10, 76);
             this.Lbl_venderPhone.Name = "Lbl_venderPhone";
-            this.Lbl_venderPhone.Size = new System.Drawing.Size(148, 12);
+            this.Lbl_venderPhone.Size = new System.Drawing.Size(135, 12);
             this.Lbl_venderPhone.TabIndex = 29;
-            this.Lbl_venderPhone.Text = "venderPhone(e.g. v1111111) :";
+            this.Lbl_venderPhone.Text = "供應商電話 venderPhone :";
             // 
             // Lbl_venderName
             // 
             this.Lbl_venderName.AutoSize = true;
             this.Lbl_venderName.Location = new System.Drawing.Point(11, 48);
             this.Lbl_venderName.Name = "Lbl_venderName";
-            this.Lbl_venderName.Size = new System.Drawing.Size(136, 12);
+            this.Lbl_venderName.Size = new System.Drawing.Size(121, 12);
             this.Lbl_venderName.TabIndex = 28;
-            this.Lbl_venderName.Text = "venderName(e.g. vender1) :";
+            this.Lbl_venderName.Text = "供應商名 venderName :";
             // 
             // Lbl_venderID
             // 
             this.Lbl_venderID.AutoSize = true;
             this.Lbl_venderID.Location = new System.Drawing.Point(12, 20);
             this.Lbl_venderID.Name = "Lbl_venderID";
-            this.Lbl_venderID.Size = new System.Drawing.Size(95, 12);
+            this.Lbl_venderID.Size = new System.Drawing.Size(121, 12);
             this.Lbl_venderID.TabIndex = 27;
-            this.Lbl_venderID.Text = "venderID(e.g. v1) :";
+            this.Lbl_venderID.Text = "供應商編號 venderID  :";
             // 
             // vender
             // 

@@ -54,7 +54,7 @@
             this.panel1.Controls.Add(this.Txt_condition);
             this.panel1.Controls.Add(this.Lbl_select_operation);
             this.panel1.Controls.Add(this.btn_select);
-            this.panel1.Location = new System.Drawing.Point(12, 135);
+            this.panel1.Location = new System.Drawing.Point(12, 116);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(440, 52);
             this.panel1.TabIndex = 40;
@@ -98,7 +98,7 @@
             // DGV_orders
             // 
             this.DGV_orders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV_orders.Location = new System.Drawing.Point(12, 193);
+            this.DGV_orders.Location = new System.Drawing.Point(12, 174);
             this.DGV_orders.Name = "DGV_orders";
             this.DGV_orders.RowTemplate.Height = 24;
             this.DGV_orders.Size = new System.Drawing.Size(429, 150);
@@ -136,23 +136,23 @@
             // 
             // Txt_deliverDate
             // 
-            this.Txt_deliverDate.Location = new System.Drawing.Point(177, 79);
+            this.Txt_deliverDate.Location = new System.Drawing.Point(247, 79);
             this.Txt_deliverDate.Name = "Txt_deliverDate";
-            this.Txt_deliverDate.Size = new System.Drawing.Size(184, 22);
+            this.Txt_deliverDate.Size = new System.Drawing.Size(114, 22);
             this.Txt_deliverDate.TabIndex = 34;
             // 
             // Txt_fare
             // 
-            this.Txt_fare.Location = new System.Drawing.Point(177, 49);
+            this.Txt_fare.Location = new System.Drawing.Point(247, 49);
             this.Txt_fare.Name = "Txt_fare";
-            this.Txt_fare.Size = new System.Drawing.Size(184, 22);
+            this.Txt_fare.Size = new System.Drawing.Size(114, 22);
             this.Txt_fare.TabIndex = 33;
             // 
             // Txt_orderID
             // 
-            this.Txt_orderID.Location = new System.Drawing.Point(177, 16);
+            this.Txt_orderID.Location = new System.Drawing.Point(247, 16);
             this.Txt_orderID.Name = "Txt_orderID";
-            this.Txt_orderID.Size = new System.Drawing.Size(184, 22);
+            this.Txt_orderID.Size = new System.Drawing.Size(114, 22);
             this.Txt_orderID.TabIndex = 32;
             // 
             // Lbl_deliverDate
@@ -160,33 +160,33 @@
             this.Lbl_deliverDate.AutoSize = true;
             this.Lbl_deliverDate.Location = new System.Drawing.Point(10, 82);
             this.Lbl_deliverDate.Name = "Lbl_deliverDate";
-            this.Lbl_deliverDate.Size = new System.Drawing.Size(166, 12);
+            this.Lbl_deliverDate.Size = new System.Drawing.Size(217, 12);
             this.Lbl_deliverDate.TabIndex = 30;
-            this.Lbl_deliverDate.Text = "deliverDate(e.g. YYYY/MM/DD) :";
+            this.Lbl_deliverDate.Text = "運送日期 deliverDate(e.g. YYYY/MM/DD) :";
             // 
             // Lbl_fare
             // 
             this.Lbl_fare.AutoSize = true;
             this.Lbl_fare.Location = new System.Drawing.Point(11, 54);
             this.Lbl_fare.Name = "Lbl_fare";
-            this.Lbl_fare.Size = new System.Drawing.Size(69, 12);
+            this.Lbl_fare.Size = new System.Drawing.Size(100, 12);
             this.Lbl_fare.TabIndex = 29;
-            this.Lbl_fare.Text = "fare(integer) :";
+            this.Lbl_fare.Text = "運費 fare(為整數) :";
             // 
             // Lbl_orderID
             // 
             this.Lbl_orderID.AutoSize = true;
             this.Lbl_orderID.Location = new System.Drawing.Point(12, 26);
             this.Lbl_orderID.Name = "Lbl_orderID";
-            this.Lbl_orderID.Size = new System.Drawing.Size(88, 12);
+            this.Lbl_orderID.Size = new System.Drawing.Size(99, 12);
             this.Lbl_orderID.TabIndex = 28;
-            this.Lbl_orderID.Text = "orderID(e.g. o1) :";
+            this.Lbl_orderID.Text = "訂單編號 orderID :";
             // 
             // orders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(481, 366);
+            this.ClientSize = new System.Drawing.Size(463, 337);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.DGV_orders);
             this.Controls.Add(this.btn_update);

@@ -129,7 +129,7 @@
             // 
             // btn_update
             // 
-            this.btn_update.Location = new System.Drawing.Point(324, 149);
+            this.btn_update.Location = new System.Drawing.Point(271, 149);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(75, 23);
             this.btn_update.TabIndex = 49;
@@ -139,7 +139,7 @@
             // 
             // btn_delete
             // 
-            this.btn_delete.Location = new System.Drawing.Point(324, 104);
+            this.btn_delete.Location = new System.Drawing.Point(271, 104);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(75, 23);
             this.btn_delete.TabIndex = 48;
@@ -149,7 +149,7 @@
             // 
             // btn_Insert
             // 
-            this.btn_Insert.Location = new System.Drawing.Point(324, 59);
+            this.btn_Insert.Location = new System.Drawing.Point(271, 62);
             this.btn_Insert.Name = "btn_Insert";
             this.btn_Insert.Size = new System.Drawing.Size(75, 23);
             this.btn_Insert.TabIndex = 47;
@@ -159,21 +159,21 @@
             // 
             // Txt_price
             // 
-            this.Txt_price.Location = new System.Drawing.Point(174, 97);
+            this.Txt_price.Location = new System.Drawing.Point(145, 97);
             this.Txt_price.Name = "Txt_price";
             this.Txt_price.Size = new System.Drawing.Size(81, 22);
             this.Txt_price.TabIndex = 46;
             // 
             // Txt_productName
             // 
-            this.Txt_productName.Location = new System.Drawing.Point(174, 69);
+            this.Txt_productName.Location = new System.Drawing.Point(145, 69);
             this.Txt_productName.Name = "Txt_productName";
             this.Txt_productName.Size = new System.Drawing.Size(81, 22);
             this.Txt_productName.TabIndex = 45;
             // 
             // Txt_productID
             // 
-            this.Txt_productID.Location = new System.Drawing.Point(174, 41);
+            this.Txt_productID.Location = new System.Drawing.Point(145, 41);
             this.Txt_productID.Name = "Txt_productID";
             this.Txt_productID.Size = new System.Drawing.Size(81, 22);
             this.Txt_productID.TabIndex = 44;
@@ -183,45 +183,45 @@
             this.Lbl_price.AutoSize = true;
             this.Lbl_price.Location = new System.Drawing.Point(5, 100);
             this.Lbl_price.Name = "Lbl_price";
-            this.Lbl_price.Size = new System.Drawing.Size(74, 12);
+            this.Lbl_price.Size = new System.Drawing.Size(105, 12);
             this.Lbl_price.TabIndex = 43;
-            this.Lbl_price.Text = "price(integer) :";
+            this.Lbl_price.Text = "單價 price(為整數) :";
             // 
             // Lbl_productName
             // 
             this.Lbl_productName.AutoSize = true;
             this.Lbl_productName.Location = new System.Drawing.Point(5, 72);
             this.Lbl_productName.Name = "Lbl_productName";
-            this.Lbl_productName.Size = new System.Drawing.Size(144, 12);
+            this.Lbl_productName.Size = new System.Drawing.Size(116, 12);
             this.Lbl_productName.TabIndex = 42;
-            this.Lbl_productName.Text = "productName(e.g. product1) :";
+            this.Lbl_productName.Text = "產品名 productName  :";
             // 
             // Lbl_productID
             // 
             this.Lbl_productID.AutoSize = true;
             this.Lbl_productID.Location = new System.Drawing.Point(5, 44);
             this.Lbl_productID.Name = "Lbl_productID";
-            this.Lbl_productID.Size = new System.Drawing.Size(99, 12);
+            this.Lbl_productID.Size = new System.Drawing.Size(113, 12);
             this.Lbl_productID.TabIndex = 41;
-            this.Lbl_productID.Text = "productID(e.g. p1) :";
+            this.Lbl_productID.Text = "產品編號 productID  :";
             // 
             // Lbl_include
             // 
             this.Lbl_include.AutoSize = true;
             this.Lbl_include.Location = new System.Drawing.Point(5, 47);
             this.Lbl_include.Name = "Lbl_include";
-            this.Lbl_include.Size = new System.Drawing.Size(245, 12);
+            this.Lbl_include.Size = new System.Drawing.Size(205, 12);
             this.Lbl_include.TabIndex = 52;
-            this.Lbl_include.Text = "是否被包含在哪個訂單 ?  其orderID ? (e.g. o1) :";
+            this.Lbl_include.Text = "哪個訂單包含此產品?(輸入其orderID) :";
             // 
             // Lbl_Iquantity
             // 
             this.Lbl_Iquantity.AutoSize = true;
             this.Lbl_Iquantity.Location = new System.Drawing.Point(5, 74);
             this.Lbl_Iquantity.Name = "Lbl_Iquantity";
-            this.Lbl_Iquantity.Size = new System.Drawing.Size(273, 12);
+            this.Lbl_Iquantity.Size = new System.Drawing.Size(292, 12);
             this.Lbl_Iquantity.TabIndex = 53;
-            this.Lbl_Iquantity.Text = "該order包含多少數量的此物品 = Iquantity ? (integer) :";
+            this.Lbl_Iquantity.Text = "承上,該訂單包含多少份此產品(請輸入Iquantity為整數) :";
             // 
             // pnl_include_realtion
             // 
@@ -302,18 +302,18 @@
             this.Lbl_venderID.AutoSize = true;
             this.Lbl_venderID.Location = new System.Drawing.Point(5, 47);
             this.Lbl_venderID.Name = "Lbl_venderID";
-            this.Lbl_venderID.Size = new System.Drawing.Size(154, 12);
+            this.Lbl_venderID.Size = new System.Drawing.Size(236, 12);
             this.Lbl_venderID.TabIndex = 52;
-            this.Lbl_venderID.Text = "供應商之venderID ? (e.g. v1) :";
+            this.Lbl_venderID.Text = "此產品由哪個供應商提供?(請輸入venderID) :";
             // 
             // Lbl_Pquantity
             // 
             this.Lbl_Pquantity.AutoSize = true;
             this.Lbl_Pquantity.Location = new System.Drawing.Point(5, 74);
             this.Lbl_Pquantity.Name = "Lbl_Pquantity";
-            this.Lbl_Pquantity.Size = new System.Drawing.Size(191, 12);
+            this.Lbl_Pquantity.Size = new System.Drawing.Size(248, 12);
             this.Lbl_Pquantity.TabIndex = 53;
-            this.Lbl_Pquantity.Text = "供應商提供之數量Pquantity(integer) :";
+            this.Lbl_Pquantity.Text = "該供應商提供的數量?(請輸入Pquantity為整數) :";
             // 
             // Lbl_IDU
             // 
@@ -352,7 +352,7 @@
             this.panel2.Controls.Add(this.Txt_price);
             this.panel2.Location = new System.Drawing.Point(6, 59);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(272, 126);
+            this.panel2.Size = new System.Drawing.Size(239, 126);
             this.panel2.TabIndex = 61;
             // 
             // Lbl_product

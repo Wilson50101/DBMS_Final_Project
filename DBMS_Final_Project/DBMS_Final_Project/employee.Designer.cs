@@ -41,9 +41,9 @@
             this.btn_select = new System.Windows.Forms.Button();
             this.Lbl_select_operation = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cbo_attribute = new System.Windows.Forms.ComboBox();
-            this.Lbl_equal = new System.Windows.Forms.Label();
             this.Txt_condition = new System.Windows.Forms.TextBox();
+            this.Lbl_equal = new System.Windows.Forms.Label();
+            this.cbo_attribute = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_employee)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -79,7 +79,7 @@
             // 
             // btn_Insert
             // 
-            this.btn_Insert.Location = new System.Drawing.Point(364, 19);
+            this.btn_Insert.Location = new System.Drawing.Point(364, 18);
             this.btn_Insert.Name = "btn_Insert";
             this.btn_Insert.Size = new System.Drawing.Size(75, 23);
             this.btn_Insert.TabIndex = 20;
@@ -89,21 +89,21 @@
             // 
             // Txt_EmpPhone
             // 
-            this.Txt_EmpPhone.Location = new System.Drawing.Point(159, 77);
+            this.Txt_EmpPhone.Location = new System.Drawing.Point(142, 77);
             this.Txt_EmpPhone.Name = "Txt_EmpPhone";
             this.Txt_EmpPhone.Size = new System.Drawing.Size(199, 22);
             this.Txt_EmpPhone.TabIndex = 18;
             // 
             // Txt_EmpName
             // 
-            this.Txt_EmpName.Location = new System.Drawing.Point(159, 49);
+            this.Txt_EmpName.Location = new System.Drawing.Point(142, 49);
             this.Txt_EmpName.Name = "Txt_EmpName";
             this.Txt_EmpName.Size = new System.Drawing.Size(199, 22);
             this.Txt_EmpName.TabIndex = 17;
             // 
             // Txt_EmpID
             // 
-            this.Txt_EmpID.Location = new System.Drawing.Point(159, 21);
+            this.Txt_EmpID.Location = new System.Drawing.Point(142, 19);
             this.Txt_EmpID.Name = "Txt_EmpID";
             this.Txt_EmpID.Size = new System.Drawing.Size(199, 22);
             this.Txt_EmpID.TabIndex = 16;
@@ -113,27 +113,27 @@
             this.Lbl_EmpPhone.AutoSize = true;
             this.Lbl_EmpPhone.Location = new System.Drawing.Point(10, 80);
             this.Lbl_EmpPhone.Name = "Lbl_EmpPhone";
-            this.Lbl_EmpPhone.Size = new System.Drawing.Size(137, 12);
+            this.Lbl_EmpPhone.Size = new System.Drawing.Size(113, 12);
             this.Lbl_EmpPhone.TabIndex = 14;
-            this.Lbl_EmpPhone.Text = "EmpPhone(e.g. e1111111) :";
+            this.Lbl_EmpPhone.Text = "員工電話 EmpPhone :";
             // 
             // Lbl_EmpName
             // 
             this.Lbl_EmpName.AutoSize = true;
             this.Lbl_EmpName.Location = new System.Drawing.Point(11, 52);
             this.Lbl_EmpName.Name = "Lbl_EmpName";
-            this.Lbl_EmpName.Size = new System.Drawing.Size(139, 12);
+            this.Lbl_EmpName.Size = new System.Drawing.Size(99, 12);
             this.Lbl_EmpName.TabIndex = 13;
-            this.Lbl_EmpName.Text = "EmpName(e.g. employee1) :";
+            this.Lbl_EmpName.Text = "員工名 EmpName :";
             // 
             // Lbl_EmpID
             // 
             this.Lbl_EmpID.AutoSize = true;
             this.Lbl_EmpID.Location = new System.Drawing.Point(12, 24);
             this.Lbl_EmpID.Name = "Lbl_EmpID";
-            this.Lbl_EmpID.Size = new System.Drawing.Size(84, 12);
+            this.Lbl_EmpID.Size = new System.Drawing.Size(99, 12);
             this.Lbl_EmpID.TabIndex = 12;
-            this.Lbl_EmpID.Text = "EmpID(e.g. e1) :";
+            this.Lbl_EmpID.Text = "員工編號 EmpID  :";
             // 
             // btn_select
             // 
@@ -167,14 +167,12 @@
             this.panel1.Size = new System.Drawing.Size(429, 52);
             this.panel1.TabIndex = 26;
             // 
-            // cbo_attribute
+            // Txt_condition
             // 
-            this.cbo_attribute.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbo_attribute.FormattingEnabled = true;
-            this.cbo_attribute.Location = new System.Drawing.Point(120, 18);
-            this.cbo_attribute.Name = "cbo_attribute";
-            this.cbo_attribute.Size = new System.Drawing.Size(85, 20);
-            this.cbo_attribute.TabIndex = 28;
+            this.Txt_condition.Location = new System.Drawing.Point(228, 16);
+            this.Txt_condition.Name = "Txt_condition";
+            this.Txt_condition.Size = new System.Drawing.Size(100, 22);
+            this.Txt_condition.TabIndex = 27;
             // 
             // Lbl_equal
             // 
@@ -185,12 +183,14 @@
             this.Lbl_equal.TabIndex = 29;
             this.Lbl_equal.Text = "=";
             // 
-            // Txt_condition
+            // cbo_attribute
             // 
-            this.Txt_condition.Location = new System.Drawing.Point(228, 16);
-            this.Txt_condition.Name = "Txt_condition";
-            this.Txt_condition.Size = new System.Drawing.Size(100, 22);
-            this.Txt_condition.TabIndex = 27;
+            this.cbo_attribute.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo_attribute.FormattingEnabled = true;
+            this.cbo_attribute.Location = new System.Drawing.Point(120, 18);
+            this.cbo_attribute.Name = "cbo_attribute";
+            this.cbo_attribute.Size = new System.Drawing.Size(85, 20);
+            this.cbo_attribute.TabIndex = 28;
             // 
             // employee
             // 

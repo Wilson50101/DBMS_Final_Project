@@ -55,68 +55,68 @@
             this.Lbl_custID.AutoSize = true;
             this.Lbl_custID.Location = new System.Drawing.Point(12, 18);
             this.Lbl_custID.Name = "Lbl_custID";
-            this.Lbl_custID.Size = new System.Drawing.Size(80, 12);
+            this.Lbl_custID.Size = new System.Drawing.Size(92, 12);
             this.Lbl_custID.TabIndex = 0;
-            this.Lbl_custID.Text = "custID(e.g. c1) :";
+            this.Lbl_custID.Text = "客戶編號 custID :";
             // 
             // Lbl_custName
             // 
             this.Lbl_custName.AutoSize = true;
             this.Lbl_custName.Location = new System.Drawing.Point(11, 46);
             this.Lbl_custName.Name = "Lbl_custName";
-            this.Lbl_custName.Size = new System.Drawing.Size(132, 12);
+            this.Lbl_custName.Size = new System.Drawing.Size(95, 12);
             this.Lbl_custName.TabIndex = 1;
-            this.Lbl_custName.Text = "custName(e.g. customer1) :";
+            this.Lbl_custName.Text = "客戶名 custName :";
             // 
             // Lbl_custPhone
             // 
             this.Lbl_custPhone.AutoSize = true;
             this.Lbl_custPhone.Location = new System.Drawing.Point(10, 74);
             this.Lbl_custPhone.Name = "Lbl_custPhone";
-            this.Lbl_custPhone.Size = new System.Drawing.Size(133, 12);
+            this.Lbl_custPhone.Size = new System.Drawing.Size(109, 12);
             this.Lbl_custPhone.TabIndex = 2;
-            this.Lbl_custPhone.Text = "custPhone(e.g. c1111111) :";
+            this.Lbl_custPhone.Text = "客戶電話 custPhone :";
             // 
             // Lbl_custAddr
             // 
             this.Lbl_custAddr.AutoSize = true;
             this.Lbl_custAddr.Location = new System.Drawing.Point(11, 102);
             this.Lbl_custAddr.Name = "Lbl_custAddr";
-            this.Lbl_custAddr.Size = new System.Drawing.Size(103, 12);
+            this.Lbl_custAddr.Size = new System.Drawing.Size(107, 12);
             this.Lbl_custAddr.TabIndex = 3;
-            this.Lbl_custAddr.Text = "custAddr(e.g. cA1) : ";
+            this.Lbl_custAddr.Text = "客戶地址 custAddr : ";
             // 
             // Txt_custID
             // 
-            this.Txt_custID.Location = new System.Drawing.Point(159, 15);
+            this.Txt_custID.Location = new System.Drawing.Point(120, 15);
             this.Txt_custID.Name = "Txt_custID";
             this.Txt_custID.Size = new System.Drawing.Size(184, 22);
             this.Txt_custID.TabIndex = 4;
             // 
             // Txt_custName
             // 
-            this.Txt_custName.Location = new System.Drawing.Point(159, 43);
+            this.Txt_custName.Location = new System.Drawing.Point(120, 43);
             this.Txt_custName.Name = "Txt_custName";
             this.Txt_custName.Size = new System.Drawing.Size(184, 22);
             this.Txt_custName.TabIndex = 5;
             // 
             // Txt_custPhone
             // 
-            this.Txt_custPhone.Location = new System.Drawing.Point(159, 71);
+            this.Txt_custPhone.Location = new System.Drawing.Point(120, 71);
             this.Txt_custPhone.Name = "Txt_custPhone";
             this.Txt_custPhone.Size = new System.Drawing.Size(184, 22);
             this.Txt_custPhone.TabIndex = 6;
             // 
             // Txt_custAddr
             // 
-            this.Txt_custAddr.Location = new System.Drawing.Point(159, 99);
+            this.Txt_custAddr.Location = new System.Drawing.Point(120, 99);
             this.Txt_custAddr.Name = "Txt_custAddr";
             this.Txt_custAddr.Size = new System.Drawing.Size(184, 22);
             this.Txt_custAddr.TabIndex = 7;
             // 
             // btn_Insert
             // 
-            this.btn_Insert.Location = new System.Drawing.Point(349, 13);
+            this.btn_Insert.Location = new System.Drawing.Point(329, 18);
             this.btn_Insert.Name = "btn_Insert";
             this.btn_Insert.Size = new System.Drawing.Size(75, 23);
             this.btn_Insert.TabIndex = 8;
@@ -126,7 +126,7 @@
             // 
             // btn_delete
             // 
-            this.btn_delete.Location = new System.Drawing.Point(349, 41);
+            this.btn_delete.Location = new System.Drawing.Point(329, 47);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(75, 23);
             this.btn_delete.TabIndex = 9;
@@ -136,7 +136,7 @@
             // 
             // btn_update
             // 
-            this.btn_update.Location = new System.Drawing.Point(349, 69);
+            this.btn_update.Location = new System.Drawing.Point(329, 74);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(75, 23);
             this.btn_update.TabIndex = 10;

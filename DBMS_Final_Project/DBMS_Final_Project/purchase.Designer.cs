@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Lbl_equal = new System.Windows.Forms.Label();
             this.cbo_attribute = new System.Windows.Forms.ComboBox();
+            this.btn_select = new System.Windows.Forms.Button();
             this.Txt_condition = new System.Windows.Forms.TextBox();
             this.Lbl_select_operation = new System.Windows.Forms.Label();
-            this.btn_select = new System.Windows.Forms.Button();
             this.DGV_orders = new System.Windows.Forms.DataGridView();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
@@ -43,7 +44,6 @@
             this.Lbl_orderID = new System.Windows.Forms.Label();
             this.Lbl_EmpID = new System.Windows.Forms.Label();
             this.Lbl_custID = new System.Windows.Forms.Label();
-            this.Lbl_equal = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_orders)).BeginInit();
             this.SuspendLayout();
@@ -61,6 +61,15 @@
             this.panel1.Size = new System.Drawing.Size(432, 52);
             this.panel1.TabIndex = 51;
             // 
+            // Lbl_equal
+            // 
+            this.Lbl_equal.AutoSize = true;
+            this.Lbl_equal.Location = new System.Drawing.Point(225, 22);
+            this.Lbl_equal.Name = "Lbl_equal";
+            this.Lbl_equal.Size = new System.Drawing.Size(11, 12);
+            this.Lbl_equal.TabIndex = 29;
+            this.Lbl_equal.Text = "=";
+            // 
             // cbo_attribute
             // 
             this.cbo_attribute.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -69,6 +78,16 @@
             this.cbo_attribute.Name = "cbo_attribute";
             this.cbo_attribute.Size = new System.Drawing.Size(85, 20);
             this.cbo_attribute.TabIndex = 28;
+            // 
+            // btn_select
+            // 
+            this.btn_select.Location = new System.Drawing.Point(352, 14);
+            this.btn_select.Name = "btn_select";
+            this.btn_select.Size = new System.Drawing.Size(75, 23);
+            this.btn_select.TabIndex = 24;
+            this.btn_select.Text = "Select";
+            this.btn_select.UseVisualStyleBackColor = true;
+            this.btn_select.Click += new System.EventHandler(this.btn_select_Click);
             // 
             // Txt_condition
             // 
@@ -85,16 +104,6 @@
             this.Lbl_select_operation.Size = new System.Drawing.Size(100, 12);
             this.Lbl_select_operation.TabIndex = 25;
             this.Lbl_select_operation.Text = "SELECT * WHERE";
-            // 
-            // btn_select
-            // 
-            this.btn_select.Location = new System.Drawing.Point(352, 14);
-            this.btn_select.Name = "btn_select";
-            this.btn_select.Size = new System.Drawing.Size(75, 23);
-            this.btn_select.TabIndex = 24;
-            this.btn_select.Text = "Select";
-            this.btn_select.UseVisualStyleBackColor = true;
-            this.btn_select.Click += new System.EventHandler(this.btn_select_Click);
             // 
             // DGV_orders
             // 
@@ -161,36 +170,27 @@
             this.Lbl_orderID.AutoSize = true;
             this.Lbl_orderID.Location = new System.Drawing.Point(19, 89);
             this.Lbl_orderID.Name = "Lbl_orderID";
-            this.Lbl_orderID.Size = new System.Drawing.Size(88, 12);
+            this.Lbl_orderID.Size = new System.Drawing.Size(102, 12);
             this.Lbl_orderID.TabIndex = 43;
-            this.Lbl_orderID.Text = "orderID(e.g. o1) :";
+            this.Lbl_orderID.Text = "訂單編號 orderID  :";
             // 
             // Lbl_EmpID
             // 
             this.Lbl_EmpID.AutoSize = true;
             this.Lbl_EmpID.Location = new System.Drawing.Point(20, 61);
             this.Lbl_EmpID.Name = "Lbl_EmpID";
-            this.Lbl_EmpID.Size = new System.Drawing.Size(84, 12);
+            this.Lbl_EmpID.Size = new System.Drawing.Size(96, 12);
             this.Lbl_EmpID.TabIndex = 42;
-            this.Lbl_EmpID.Text = "EmpID(e.g. e1) :";
+            this.Lbl_EmpID.Text = "員工編號 EmpID :";
             // 
             // Lbl_custID
             // 
             this.Lbl_custID.AutoSize = true;
             this.Lbl_custID.Location = new System.Drawing.Point(21, 33);
             this.Lbl_custID.Name = "Lbl_custID";
-            this.Lbl_custID.Size = new System.Drawing.Size(80, 12);
+            this.Lbl_custID.Size = new System.Drawing.Size(95, 12);
             this.Lbl_custID.TabIndex = 41;
-            this.Lbl_custID.Text = "custID(e.g. c1) :";
-            // 
-            // Lbl_equal
-            // 
-            this.Lbl_equal.AutoSize = true;
-            this.Lbl_equal.Location = new System.Drawing.Point(225, 22);
-            this.Lbl_equal.Name = "Lbl_equal";
-            this.Lbl_equal.Size = new System.Drawing.Size(11, 12);
-            this.Lbl_equal.TabIndex = 29;
-            this.Lbl_equal.Text = "=";
+            this.Lbl_custID.Text = "客戶編號 custID  :";
             // 
             // purchase
             // 
