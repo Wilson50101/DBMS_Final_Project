@@ -229,6 +229,7 @@
             this.btn_IDUpurchase.TabIndex = 14;
             this.btn_IDUpurchase.Text = "purchase";
             this.btn_IDUpurchase.UseVisualStyleBackColor = true;
+            this.btn_IDUpurchase.Click += new System.EventHandler(this.btn_IDUpurchase_Click);
             // 
             // panel3
             // 

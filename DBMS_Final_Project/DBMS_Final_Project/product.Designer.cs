@@ -186,7 +186,6 @@
             this.Lbl_price.Size = new System.Drawing.Size(74, 12);
             this.Lbl_price.TabIndex = 43;
             this.Lbl_price.Text = "price(integer) :";
-            this.Lbl_price.Click += new System.EventHandler(this.Lbl_price_Click);
             // 
             // Lbl_productName
             // 
@@ -214,7 +213,6 @@
             this.Lbl_include.Size = new System.Drawing.Size(245, 12);
             this.Lbl_include.TabIndex = 52;
             this.Lbl_include.Text = "是否被包含在哪個訂單 ?  其orderID ? (e.g. o1) :";
-            this.Lbl_include.Click += new System.EventHandler(this.Lbl_include_Click);
             // 
             // Lbl_Iquantity
             // 

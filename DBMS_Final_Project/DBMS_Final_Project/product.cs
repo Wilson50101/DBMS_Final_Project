@@ -19,17 +19,6 @@ namespace DBMS_Final_Project
         {
             InitializeComponent();
         }
-
-        private void Lbl_include_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Lbl_price_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_Insert_Click(object sender, EventArgs e)
         {
             try

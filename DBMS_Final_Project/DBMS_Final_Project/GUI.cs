@@ -127,5 +127,11 @@ namespace DBMS_Final_Project
             product pd = new product();
             pd.Show();
         }
+
+        private void btn_IDUpurchase_Click(object sender, EventArgs e)
+        {
+            purchase pc = new purchase();
+            pc.Show();
+        }
     }
 }
